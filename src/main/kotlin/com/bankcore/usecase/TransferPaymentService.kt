@@ -3,7 +3,7 @@ package com.bankcore.usecase
 import com.bankcore.domain.Account
 import com.bankcore.domain.Money
 
-class transferPaymentService {
+class TransferPaymentService {
     fun transferPayment(from: Account, to: Account, paymentAmount: Money) {
         if (from.bill.amount.amount < paymentAmount.amount) {
             throw IllegalArgumentException("Insufficient funds in the source account")

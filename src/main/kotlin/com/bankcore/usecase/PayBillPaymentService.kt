@@ -3,7 +3,7 @@ package com.bankcore.usecase
 import com.bankcore.domain.Account
 import com.bankcore.domain.Money
 
-class payBillPaymentService {
+class PayBillPaymentService {
     fun payFromAccount(from: Account, paymentAmount: Money) {
         subtractFromAccount(from, paymentAmount)
     }
